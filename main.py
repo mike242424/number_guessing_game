@@ -2,14 +2,14 @@ import random
 
 print("Welcome to the number guessing game.")
 print("I'm thinking of a number between 1 and 100.")
-number = random.randint(1, 101)
+number = random.randint(1, 100)
 difficulty = input("Choose a difficulty. Type 'easy' or 'hard':\n")
 
 if(difficulty == 'easy'):
   guesses = 10
 elif(difficulty == 'hard'):
   guesses = 5
-  
+
 print(f'You have {guesses} guesses to get the correct number.')
 
 while(guesses > 0):
